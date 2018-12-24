@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mishka</title>
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="#">
+			<img class="logo__img" src="#" alt="Логотип: Мишка" width="" height="">
+		</a>
+		<button class="menu__toggle">Включение/Включение меню</button>
+		<nav class="menu">
+			<a class="menu__link" href="#">Каталог товаров</a>
+			<a class="menu__link" href="#">Вязание на заказ</a>
+			<a class="menu__link" href="#">Новые поступления</a>
+			<a class="menu__link" href="#">Распродажа</a>
+		</nav>
+		<form class="form-search" action="" method="get">
+			<input class="form-search__input" type="search" name="search">Поиск по сайту
+		</form>
+		<div class="user-block">
+			<a class="user-block__link" href="#">Корзина: пока пуста</a>
+		</div>
+		<p class="header__add-info">Бесплатная доставка по России</p>
+		<div class="header-content">
+			<p class="header-content__title">Каталог товаров</p>
+		</div>
+	</header>
+	<main class="main">
+		<section class="catalog">
+			<h1 class="visually-hidden">Каталог товаров</h1>
+			<ul class="catalog__list">
+				<li class="catalog__item catalog__item--toy">
+					<a class="catalog__link" href="#">
+						<img class="catalog__img" src="#" width="" height="" alt="Зайчик попрыгайчик">
+					</a>
+					<h2 class="catalog__title"><a href="#">Зайчик попрыгайчик</a></h2>
+					<p class="catalog__characteristics">
+						Рост <span class="catalog__growth">30</span> см, 
+						вес <span class="catalog__weight">200</span> г
+					</p>
+					<div class="catalog__inner">
+						<p class="catalog__price">1200 руб.</p>
+						<a class="catalog__cart" href="#">в корзину</a>
+					</div>
+				</li>
+				<li class="catalog__item catalog__item--accessories">
+					<a class="catalog__link" href="#">
+						<img class="catalog__img" src="#" width="" height="" alt="Корзинка для белья">
+					</a>
+					<h2 class="catalog__title"><a href="#">Корзинка для белья</a></h2>
+					<p class="catalog__characteristics">
+						Диаметр <span class="catalog__diameter">15</span> см, 
+						высота <span class="catalog__height">10</span> см
+					</p>
+					<div class="catalog__inner">
+						<p class="catalog__price">690 руб.</p>
+						<a class="catalog__cart" href="#">в корзину</a>
+					</div>
+				</li>
+				<li class="catalog__item catalog__item--accessories">
+					<a class="catalog__link" href="#">
+						<img class="catalog__img" src="#" width="" height="" alt="Корзинка для белья">
+					</a>
+					<h2 class="catalog__title"><a href="#">Большая корзинка для игрушек</a></h2>
+					<p class="catalog__characteristics">
+						Диаметр <span class="catalog__diameter">30</span> см, 
+						высота <span class="catalog__height">30</span> см
+					</p>
+					<div class="catalog__inner">
+						<p class="catalog__price">1500 руб.</p>
+						<a class="catalog__cart" href="#">в корзину</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="presentation">
+			<h3 class="presentation__title">Процесс производства</h3>
+			<div class="video presentation__video">
+	      <video class="video__content" preload="metadata" poster="img/video-mobile@1x.jpg" width="320" height="205" controls>
+	        <source src="#.mp4" type="video/mp4">
+	        <source src="#.ogv" type="video/ogg">
+	        <source src="#.webm" type="video/webm">
+	      </video>
+	      <button class="video__button-play">Включить видео</button>
+	    </div>
+	    <p class="presentation__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+	    <a class="btn presentation__link" href="#">Сделать заказ</a>
+		</section>
+	</main>
+	<footer class="footer">
+		<img class="footer__logo" src="#" width="" height="" alt="логотип">
+		<div class="social footer__social"> 
+			<a class="social__link social__link--inst" href="#">Instagramm</a>
+			<a class="social__link social__link--fb" href="#">Facebook</a>
+			<a class="social__link social__link--twit" href="#">Twitter</a>
+		</div>
+		<p class="copyright footer__copyright">
+			Разработано:
+			<a class="copyright__link" href="#">ссылка на HtmlAcademy</a>
+		</p>
+	</footer>
+</body>
+</html>
