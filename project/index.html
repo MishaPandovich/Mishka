@@ -3,31 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mishka</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="header">
-		<a class="logo" href="#">
-			<img class="logo__img" src="#" alt="Логотип: Мишка" width="" height="">
-		</a>
-		<button class="menu__toggle">Включение/Включение меню</button>
-		<nav class="menu">
-			<a class="menu__link" href="#">Каталог товаров</a>
+		<div class="header__inner">
+			<a class="logo" href="#">
+				<picture>
+          <source media="(min-width: 1190px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 690px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="logo__icon" src="img/mishka-logo-mobile.svg" alt="Логотип Мишка">
+        </picture>
+			</a>
+			<button class="menu-toggle">Включение/Выключение меню
+				<svg class="menu-toggle__icon menu-toggle__icon--open"><use xlink:href="img/sprite.svg#menu-open"></use></svg>
+				<svg class="menu-toggle__icon menu-toggle__icon--close visually-hidden"><use xlink:href="img/sprite.svg#menu-close"></use></svg>
+			</button>
+		</div>
+		<nav class="menu header__menu mobile-hidden">
+			<a class="menu__link menu__link--vertical-line" href="#">Каталог товаров</a>
 			<a class="menu__link" href="#">Вязание на заказ</a>
-			<a class="menu__link" href="#">Новые поступления</a>
-			<a class="menu__link" href="#">Распродажа</a>
+			<div class="menu__links--for-desktop">
+				<a class="menu__link" href="#">Новые поступления</a>
+				<a class="menu__link" href="#">Распродажа</a>
+			</div>
 		</nav>
-		<form class="form-search" action="" method="get">
-			<input class="form-search__input" type="search" name="search">Поиск по сайту
-		</form>
-		<div class="user-block">
+		<div class="search header__search mobile-hidden">
+			<a class="search__link" href="#">Поиск по сайту</a>
+			<svg class="search__icon"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+		</div>
+		<div class="user-block header__user-block mobile-hidden">
 			<a class="user-block__link" href="#">Корзина: пока пуста</a>
+			<svg class="user-block__icon"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
 		</div>
 		<p class="header__add-info">Бесплатная доставка по России</p>
-		<div class="header-content header-content--page-index">
-			<p class="header-content__title">Милые штуки ручной работы для дома</p>
+		<div class="header-content header__header-content">
+			<p class="header-content__background header-content__background--page-index">
+				<b class="header-content__title">Милые штуки ручной<br> работы для дома</b>
+			</p>
 			<div class="proposed-products">
-				<div class="proposed-product">Предметы интерьера</div>
-				<div class="proposed-product">Детские игрушки</div>
+				<a class="proposed-products__link" href="#">Предметы<br> интерьера
+					<svg class="proposed-products__icon"><use xlink:href="img/sprite.svg#icon-accessories"></use></svg>
+				</a>
+				<a class="proposed-products__link proposed-products__link--toy" href="#">Детские<br> игрушки
+					<svg class="proposed-products__icon"><use xlink:href="img/sprite.svg#icon-toy"></use></svg>
+				</a>
 			</div>
 		</div>
 	</header>

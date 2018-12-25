@@ -1,0 +1,92 @@
+.header__inner {
+	position: relative;
+	width: 100%;
+	height: 79px;
+	border-bottom: 1px solid #ececec;
+}
+
+.header__add-info {
+	display: none;
+}
+
+.mobile-hidden {
+	display: block;
+}
+
+@media (min-width: 690px)  {
+	.header {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.header::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -10px;
+		width: 100%;
+		height: 24px;
+		background: url('../../../img/zigzag-fill.png') repeat;
+	}
+
+ .header__inner {
+	 width: 48%;
+	 height: 85px;
+	 order: -6;
+	}
+
+	.header__search {
+		order: -5;
+	}
+
+	.header__user-block {
+		order: -4;
+	}
+
+	.header__menu {
+	  position: absolute;
+		top: 107px;
+    left: 45px;
+    order: -3;
+	}
+
+	.header__add-info {
+		display: block;
+		position: absolute;
+    right: 7%;
+    top: 90px;
+		order: -2;
+
+		font-family: 'Opensans', sans-serif;
+		font-size: 15px;
+		line-height: 24px;
+		color: #444444;
+	}
+}
+
+@media (min-width: 1250px)  {
+ .header__inner {
+	 width: 267px;
+	 height: auto;
+	 order: -5;
+	}
+
+	.header__search {
+		order: -4;
+	}
+
+	.header__user-block {
+		order: -3;
+	}
+
+	.header__menu {
+		order: -6;
+		position: static;
+    width: 530px;
+	}
+
+	.header__add-info {
+		right: 8.5%;
+	}
+}
