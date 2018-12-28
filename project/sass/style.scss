@@ -1,3 +1,4 @@
+@import 'global/fonts.scss';
 @import 'global/body.scss';
 @import 'blocks/header/header.scss';
 @import 'blocks/header/logo.scss';
@@ -6,3 +7,11 @@
 @import 'blocks/header/search.scss';
 @import 'blocks/header/user-block.scss';
 @import 'blocks/header/header-content.scss';
+@import 'blocks/main/popular-product.scss';
+@import 'blocks/main/about-us.scss';
+@import 'blocks/main/comments.scss';
+@import 'blocks/main/contacts.scss';
+@import 'blocks/main/map.scss';
+@import 'blocks/footer/footer.scss';
+@import 'blocks/footer/social.scss';
+@import 'blocks/footer/copyright.scss';

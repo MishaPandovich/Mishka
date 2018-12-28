@@ -19,7 +19,7 @@
 		color: rgba(0, 0, 0, 0.5);
 	}
 
-	&:hover + .search__icon {
+	&:hover .search__icon {
 		fill: #63d1bb;
 	}
 
@@ -27,7 +27,7 @@
 		color: rgba(0, 0, 0, 0.3);
 	}
 
-	&:active + .search__icon {
+	&:active .search__icon {
 		fill: rgba(99, 209, 187, 0.4);
 	}
 }

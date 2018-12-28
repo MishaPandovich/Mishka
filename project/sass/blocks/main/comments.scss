@@ -1,0 +1,218 @@
+.comments {
+	position: relative;
+	padding-top: 13px;
+	padding-left: 8.7%;
+	padding-bottom: 50px;
+}
+
+.comments::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 6px;
+	background: url('../img/zigzag-line.png') repeat;
+}
+
+.comments__title {
+	font-family: 'Opensans Bold', sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.comments__inner {
+	margin-right: 27px;
+}
+
+.comments__content {
+	font-family: 'Opensans', sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #444444;
+}
+
+.comments__user {
+	margin-top: 30px;
+
+	font-family: 'Opensans Bold', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.comments__user-login {
+	margin-top: -10px;
+
+	font-family: 'Opensans', sans-serif;
+	font-size: 17px;
+	color: #444444;
+}
+.comments__switches {
+	height: 50px;
+    margin-top: 34px;
+    margin-bottom: 38px;
+}
+
+.comments__switch {
+	display: inline-block;
+
+	font-size: 0;
+	background: transparent;
+	border: 1px solid #ececec;
+}
+
+.comments__switch--prev {
+	width: 132px;
+    padding: 10px 0;
+}
+
+.comments__switch--next {
+	width: 132px;
+    padding: 10px 0;
+    margin-left: -5px;
+}
+
+.comments__icon {
+	width: 58px;
+    height: 32px;
+    cursor: pointer;
+
+    &:hover {
+		fill: rgba(0, 0, 0, 0.5);
+	}
+
+	&:active {
+		fill: rgba(0, 0, 0, 0.3);
+	}
+}
+
+@media (min-width: 690px)  {
+	.comments {
+		padding-left: 6%;
+		padding-bottom: 115px;
+	}
+	
+	.comments__wrapper {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.comments:before {
+		content: "";
+	    position: absolute;
+	    top: 31px;
+	    left: 0;
+	    z-index: -1;
+	    width: 350px;
+	    height: 475px;
+	    background: url(../img/review.jpg) no-repeat;
+	}
+
+	.comments::after {
+		height: 18px;
+		background: url('../img/zigzag-line-desktop.png') repeat;
+	}
+
+	.comments__title {
+		order: -2;
+		margin-top: 104px;
+    	font-size: 43px;
+	}
+
+	.comments__link {
+		order: -1;
+		height: 17px;
+	    padding: 15px 40px;
+	    margin-top: 96px;
+	    margin-left: auto;
+	    margin-right: 48px;
+	}
+
+	.comments__inner {
+		margin-top: 7px;
+	    margin-left: 4px;
+	    width: 650px;
+	}
+
+	.comments__content {
+		font-size: 17px;
+	}
+
+	.comments__user {
+		margin-top: 59px;
+    	font-size: 18px;
+	}
+
+	.comments__switches {
+		position: absolute;
+		right: 35px;
+    	bottom: -25px;
+	}
+
+	.comments__switch {
+		width: 92px;
+		border: none;
+	}
+}
+
+@media (min-width: 950px)  {
+	.comments__wrapper {
+		max-width: 90%;
+	}
+}
+
+@media (min-width: 1190px) {
+	.comments {
+		margin-top: 12px;
+	   	padding-left: 8%;
+	   	padding-bottom: 170px;
+	}
+	
+	.comments:before {
+		left: 99px;
+	}
+
+	.comments::after {
+		height: 23px;
+		background: url('../img/zigzag-linedesktop.png') repeat;
+	}
+
+	.comments__wrapper {
+	    width: 80%;
+		margin-left: 6%;
+    	max-width: 100%;
+	}
+
+	.comments__title {
+	    font-size: 54px;
+    	margin-top: 100px;
+    	margin-left: 8%;
+	}
+
+	.comments__content {
+		margin-top: 10px;
+	    margin-left: 12%;
+	    width: 775px;
+	}
+
+	.comments__link {
+		margin-right: 1px;
+	}
+
+	.comments__user {
+		margin-top: 39px;
+    	margin-left: 12%;
+    	font-size: 17px;
+	}
+
+	.comments__user-login {
+		margin-left: 12%;
+	}
+
+	.comments__switches {
+		right: -6px;
+	}
+}    

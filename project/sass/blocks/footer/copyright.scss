@@ -1,0 +1,44 @@
+.copyright {
+	position: relative;
+    padding-bottom: 10px;
+
+    font-family: 'Opensans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.copyright__link {
+    position: absolute;
+    top: -14px;
+    font-size: 0;
+}
+
+.copyright__icon {
+    width: 44px;
+    height: 42px;
+    fill: #63d1bb;
+
+    &:hover {
+		fill: #46c1ae;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
+}
+
+@media (min-width: 690px)  {
+	.copyright__link {
+	    position: absolute;
+	    top: -14px;
+	    right: -60px;
+	    font-size: 0;
+	}
+}
+
+@media (min-width: 1190px)  {
+	.copyright__link {
+	    top: -8px;
+	}
+}

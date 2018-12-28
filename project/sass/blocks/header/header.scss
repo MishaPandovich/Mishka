@@ -10,7 +10,7 @@
 }
 
 .mobile-hidden {
-	display: block;
+	display: none;
 }
 
 @media (min-width: 690px)  {
@@ -54,7 +54,7 @@
 	.header__add-info {
 		display: block;
 		position: absolute;
-    right: 7%;
+    right: 6.5%;
     top: 90px;
 		order: -2;
 
@@ -63,11 +63,15 @@
 		line-height: 24px;
 		color: #444444;
 	}
+
+	.mobile-hidden {
+		display: block;
+	}
 }
 
-@media (min-width: 1250px)  {
+@media (min-width: 1190px)  {
  .header__inner {
-	 width: 267px;
+	 width: 238px;;
 	 height: auto;
 	 order: -5;
 	}
@@ -87,6 +91,6 @@
 	}
 
 	.header__add-info {
-		right: 8.5%;
+		right: 8%;
 	}
 }

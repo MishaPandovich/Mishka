@@ -1,3 +1,40 @@
 body {
 	margin: 0 auto;
 }
+
+.btn {
+    display: inline-block;
+    padding: 15px 82px;
+    font-family: 'Opensans Bold', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #444444;
+    border: 2px solid #444444;
+    background: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+		color: #ffffff;
+		background: #444444;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.6);
+		opacity: 0.9;
+	}
+}
+
+@media (min-width: 1250px)  {
+	body {
+		max-width: 1350px;
+	}
+}
+
+@media (min-width: 1349px)  {
+	body {
+		box-shadow: 0 0 15px 0 #929292;
+	}
+}

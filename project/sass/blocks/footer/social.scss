@@ -1,0 +1,32 @@
+.social {
+	width: 150px;
+}
+
+.social__link {
+	width: 23px;
+    height: 23px;
+    margin-right: 37px;
+	font-size: 0;
+}
+
+.social__link:nth-child(3n) {
+	margin-right: 0;
+}
+
+.social__icon {
+	width: 23px;
+    height: 23px;
+
+    &:hover {
+		fill: #62d1ba;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
+}
+
+.social__link--fb .social__icon {
+	width: 23px;
+    height: 28px;
+}

@@ -1,0 +1,12 @@
+.map {
+	width: 98%;
+    height: 457px;
+    border: 1px solid red;
+}
+
+@media (min-width: 1190px) {
+	.map {
+		width: 524px;
+	}
+}
+

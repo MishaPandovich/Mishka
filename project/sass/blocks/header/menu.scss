@@ -8,7 +8,7 @@
   padding-left: 23%;
 
 	font-family: 'Opensans Bold', sans-serif;
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 24px;
 	font-weight: bold;
 	text-decoration: none;
@@ -31,7 +31,7 @@
 
 @media (min-width: 690px)  {
 	.menu {
-	  width: 430px;
+	  width: 55%;
 		background: none;
 	}
 
@@ -47,9 +47,9 @@
 	}
 }
 
-@media (min-width: 1250px)  {
+@media (min-width: 1190px)  {
 	.menu {
-		width: 43%;
+		width: 45%;
     padding-top: 30px;
     padding-left: 8%;
     box-sizing: border-box;
@@ -58,18 +58,19 @@
 
 	.menu__links--for-desktop {
 		display: block;
+		width: 65%;
     position: absolute;
     top: 105px;
 
     & .menu__link {
-			margin-right: 53px;
-    	font-size: 16px;
+			margin-right: 58px;
+    	font-size: 15px;
   	}
 	}
 
 	.menu__link {
-		margin-right: 65px;
-		font-size: 18px;
+		margin-right: 68px;
+		font-size: 17px;
     line-height: 24px;
 	}
 	
